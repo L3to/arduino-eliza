@@ -6,7 +6,7 @@
 ![Wokwi Simulator](https://img.shields.io/badge/Wokwi-Simulator-purple)
 
 ---
-
+## Powered by Gemini API
 ## 🎯 Visão Geral do Projeto
 
 Este projeto, desenvolvido como parte do nosso trabalho semestral **"Global Solution"**, aborda a crucial questão da **mitigação dos impactos psicológicos em vítimas de eventos extremos** (como tornados, inundações, terremotos, etc.). Entendemos que, além da resposta física, o apoio emocional e psicológico imediato é fundamental para a recuperação.
