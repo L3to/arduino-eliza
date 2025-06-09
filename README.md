@@ -134,6 +134,7 @@ O keypad é configurado com as seguintes conexões:
         * `Adafruit GFX Library`
         * `Adafruit ILI9341`
         * `Keypad`
+Após isso é só buildar e testar clicando no diagram.json e no botão de play!
 5.  **Simulação (Opcional, mas Recomendado):**
     * Use a extensão Wokwi para simular o projeto antes de fazer o upload para o hardware real. Isso ajuda a identificar problemas de hardware e lógica rapidamente.
     * Com o projeto aberto no VS Code, a extensão Wokwi deve ser ativada. Você pode iniciar a simulação diretamente pelo VS Code (procure o botão de "Play" do Wokwi). O diagrama de conexão já está configurado nos projetos Wokwi referenciados.
@@ -148,6 +149,16 @@ O keypad é configurado com as seguintes conexões:
         * `W`: Tenta reconectar ao Wi-Fi ou desconecta, dependendo do estado atual. O LED de Wi-Fi (`GPIO 16`) indicará o status.
         * `P`: Reinicia o dispositivo.
     * As respostas da IA serão exibidas na tela, e os dados serão enviados para o ThingSpeak para monitoramento.
+    * Tópicos iniciais:
+      - "Coping with anxiety",
+      - "Managing stress",
+      - "Dealing with sadness",
+      - "Improving sleep",
+      - "Handling loneliness",
+      - "Building self-confidence",
+      - "Overcoming fear",
+      - "Finding motivation",
+      - "Talking about a recent extreme event"
 
 ---
 
