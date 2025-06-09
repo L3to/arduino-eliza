@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 96,
+      "left": -158.36,
+      "attrs": { "fastTLS": "1" }
+    },
+    { "type": "wokwi-membrane-keypad", "id": "keypad", "top": -203.6, "left": -402.9, "attrs": {"columns": "3",
+        "keys": [ "1", "2", "3", "", "4", "5", "6", "", "7", "8", "9", "", "H", "W", "P" ]} 
+      },
+    {
+      "type": "wokwi-ili9341",
+      "id": "lcd1",
+      "top": 34.2,
+      "left": 88.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 15.6, "left": -34.6, "attrs": { "color": "green" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 91.2,
+      "left": -58.15,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "lcd1:GND", "esp:GND.2", "black", [ "h-19.2", "v91.54" ] ],
+    [ "lcd1:RST", "esp:4", "purple", [ "h-48", "v67.2" ] ],
+    [ "lcd1:D/C", "esp:2", "#8f4814", [ "h-28.8", "v44.14" ] ],
+    [ "lcd1:SCK", "esp:18", "gray", [ "v-0.01", "h-48", "v-19.2" ] ],
+    [ "lcd1:MISO", "esp:19", "orange", [ "h-67.2", "v-9.61", "h0", "v-19.2" ] ],
+    [ "lcd1:MOSI", "esp:23", "green", [ "h-38.4", "v-67.31" ] ],
+    [ "esp:5V", "lcd1:VCC", "red", [ "h-21.83", "v-206.3", "h201.6", "v48.5" ] ],
+    [ "lcd1:CS", "esp:15", "violet", [ "h-57.6", "v105.6" ] ],
+    [ "esp:GND.2", "btn1:2.l", "black", [ "h76.8", "v201.4" ] ],
+    [ "esp:5", "btn1:1.l", "green", [ "h19.2", "v96" ] ],
+    [ "r1:1", "led1:C", "green", [ "h0" ] ],
+    [ "led1:A", "esp:16", "green", [ "v0" ] ],
+    [ "esp:GND.2", "r1:2", "black", [ "v0" ] ],
+    [ "btn2:1.l", "esp:17", "red", [ "h-153.6", "v-153.6", "h-19.2" ] ],
+    [ "btn2:2.l", "esp:GND.2", "black", [ "h-144", "v0.2" ] ],
+    [ "keypad:C3", "esp:17", "purple", [ "v0" ] ], 
+    [ "keypad:C2", "esp:13", "purple", [ "v0" ] ], 
+    [ "keypad:C1", "esp:12", "purple", [ "v0" ] ], 
+    [ "keypad:R4", "esp:25", "green", [ "v0" ] ],
+    [ "keypad:R3", "esp:26", "green", [ "v0" ] ],
+    [ "keypad:R2", "esp:27", "green", [ "v0" ] ],
+    [ "keypad:R1", "esp:14", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
