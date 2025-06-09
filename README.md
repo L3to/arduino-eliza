@@ -11,7 +11,7 @@
 
 Este projeto, desenvolvido como parte do nosso trabalho semestral **"Global Solution"**, aborda a crucial questão da **mitigação dos impactos psicológicos em vítimas de eventos extremos** (como tornados, inundações, terremotos, etc.). Entendemos que, além da resposta física, o apoio emocional e psicológico imediato é fundamental para a recuperação.
 
-**Eliza** é um sistema interativo baseado em ESP32 que atua como um "psicólogo de bolso" preliminar. Através de um **keypad matricial** e uma tela TFT, as vítimas podem acessar um chatbot de inteligência artificial (integrado com a API Gemini) que oferece suporte inicial, informações e opções de conversas guiadas para ajudar a navegar seus sentimentos e encontrar recursos. O sistema também registra dados importantes para monitoramento e análise através da plataforma ThingSpeak, permitindo que profissionais acompanhem a demanda e os tipos de tópicos mais procurados.
+**Eliza** é um sistema interativo baseado em ESP32 que atua como um "psicólogo de bolso" preliminar. Através de um **keypad matricial** e uma tela TFT, as vítimas podem acessar um chatbot de inteligência artificial (integrado com a API Gemini) que oferece suporte inicial, informações e opções de conversas guiadas para ajudar a navegar seus sentimentos e encontrar recursos. O sistema também registra dados importantes para monitoramento e análise através da plataforma ThingSpeak, permitindo que profissionais acompanhem a demanda e os tipos de tópicos mais procurados. A ideia é ser uma solução barata para amenizar a situação extrema que as pessoas estão vivenciando, todo fluxo é feito inglês para englobar o mundo inteiro.
 
 ---
 
@@ -53,10 +53,7 @@ Este projeto foi desenvolvido utilizando a robustez do **ESP32** para conectivid
 
 O ThingSpeak é utilizado para coletar e visualizar dados importantes sobre o uso do sistema Eliza. Isso nos permite entender quais tópicos estão sendo mais acessados e a performance das requisições à IA. Os dados são enviados em lote para otimizar o uso da API e respeitar os limites de taxa do ThingSpeak.
 
-### Credenciais ThingSpeak Utilizadas:
-
-* **Channel ID:** `***`
-* **Write API Key:** `***`
+![image](https://github.com/user-attachments/assets/cd71696e-e668-470f-ab86-ffa0004ddfe9)
 
 ### Campos do ThingSpeak:
 
